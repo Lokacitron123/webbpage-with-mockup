@@ -23,7 +23,7 @@ function setActiveItem() {
     circles[activeIndex].classList.remove("circleActive");
 
     // Update the active index
-    activeIndex--;
+    activeIndex = activeIndex - 1;
     if (activeIndex < 0) {
       activeIndex = allItems.length - 1;
     }
@@ -44,7 +44,7 @@ function setActiveItem() {
     circles[activeIndex].classList.remove("circleActive");
 
     // Update the active index
-    activeIndex++;
+    activeIndex = activeIndex + 1;
     if (activeIndex >= allItems.length) {
       activeIndex = 0;
     }

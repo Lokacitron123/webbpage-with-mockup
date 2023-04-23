@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/f6167cfc4f.js"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/main.style.css" />
 
     <script src="javascript/script.main.js" defer></script>
     <title>Text | Webbyrå Stockholm</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <p class="logo-text">Restore</p>
-        <p class="logo-">Blästring</p>
+    <header class="flex-between">
+      <div class="logo opacity">
+        <h2>
+          Restore
+          <span>blästring</span>
+        </h2>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Våra tjänster</a></li>
-          <li><a href="#">Referesner</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#" class="hoverMe">Våra tjänster</a></li>
+          <li><a href="#" class="hoverMe">Referenser</a></li>
+          <li><a href="#" class="hoverMe">Om oss</a></li>
+          <li><a href="#" class="hoverMe">Kontakt</a></li>
+          <button class="cta" aria-colcount="">Ring oss direkt</button>
         </ul>
-        <button class="cta">Ring oss direkt</button>
       </nav>
     </header>
     <main>
@@ -46,7 +58,7 @@
         </div>
       </section>
       <section class="informationBox">
-        <div class="infoBox">
+        <div class="infoBox flex">
           <div>
             <p>
               Blästring avlägsnar rost, smuts, färg och olika beläggningar på
@@ -59,38 +71,38 @@
         <div class="infoBoxTwo">
           <div class="flex-column">
             <div class="wetBlastringImg"></div>
-            <h2>Våt blästring</h2>
+            <h3>Våt blästring</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               perspiciatis eaque, veniam, aliquam atque et inventore cumque a
               quos ipsum consequatur recusandae architecto. Nobis, consequatur!
             </p>
-            <button>Läs mer</button>
+            <a href="#" class="hoverMe">läs mer</a>
           </div>
           <div class="flex-column">
             <div class="floorBlasteringImg"></div>
-            <h2>Golvblästring</h2>
+            <h3>Golvblästring</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               perspiciatis eaque, veniam, aliquam atque et inventore cumque a
               quos ipsum consequatur recusandae architecto. Nobis, consequatur!
             </p>
-            <button>Läs mer</button>
+            <a href="#" class="hoverMe">läs mer</a>
           </div>
           <div class="flex-column">
             <div class="wetBlastringImg"></div>
-            <h2>Isblästring</h2>
+            <h3>Isblästring</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               perspiciatis eaque, veniam, aliquam atque et inventore cumque a
               quos ipsum consequatur recusandae architecto. Nobis, consequatur!
             </p>
-            <button>Läs mer</button>
+            <a href="" class="hoverMe">läs mer</a>
           </div>
         </div>
       </section>
       <section class="mobileblasting">
-        <div class="imgContainer">
+        <div class="imgContainer flex-evenly">
           <img src="/images/blastingtwo.jpg" alt="" class="img move" />
           <img src="/images/blastingthree.jpg" alt="" class="img" />
           <!-- <div class="imgOne"></div>
@@ -98,7 +110,7 @@
         </div>
         <div class="textContainer flex">
           <div class="textContent">
-            <h2>Mobil blästring för privatpersoner & företag</h2>
+            <h3>Mobil blästring för privatpersoner & företag</h3>
             <p>
               Blästring genomförs med hjälp av tryckluft där sand sprutas mot
               objektet för att få en så effektiv rengöring som möjligt. Fördelen
@@ -106,12 +118,12 @@
               slutresultatet ger en yta där färg biter tag i materialet och blir
               mer hållbar än om materialet exempelvis hade sliptats
             </p>
-            <button class="cta">Läs mer om våra tjänster</button>
+            <button class="cta-two">Läs mer om våra tjänster</button>
           </div>
         </div>
       </section>
       <section class="companies">
-        <div class="titleArea">Kunder som anlitat oss</div>
+        <div class="titleArea flex">Kunder som anlitat oss</div>
         <div class="flexArea">
           <div class="flexItem">Caverion</div>
           <div class="flexItem">
@@ -136,12 +148,12 @@
         </div>
       </section>
       <section class="service">
-        <div class="info">
+        <div class="info flex">
           <div class="textContainer">
-            <h2>Vad kan vi blästra?</h2>
+            <h3>Vad kan vi blästra?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              vitae labore eius quibusdam iste officia?
+              vi erbjuder våra tjänster både till företag och privatpersoner.
+              Hör av dig så hjälper vi dig.
             </p>
             <ul>
               <li>Fasader</li>
@@ -152,15 +164,15 @@
             <button class="cta-two">Läs mer om våra tjänster</button>
           </div>
         </div>
-        <div class="imgContainer">
-          <img src="/images/blastingtwo.jpg" alt="" class="img" />
-          <img src="/images/blastingthree.jpg" alt="" class="img move" />
+        <div class="imgContainer flex-evenly">
+          <img src="/images/blastingtwo.jpg" alt="" class="img move" />
+          <img src="/images/blastingthree.jpg" alt="" class="img" />
           <!-- <div class="imgOne"></div>
                 <div class="imgTwo"></div> -->
         </div>
       </section>
-      <section class="sliderArea">
-        <ul class="slider">
+      <section class="sliderArea flex-column">
+        <ul class="slider flex-column">
           <li class="li-item active">
             <p>
               1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -185,14 +197,14 @@
           </li>
         </ul>
         <p>Anders Andersson, Demo AB</p>
-        <div class="buttonArea">
-          <button class="prev">&lt;</button>
+        <div class="buttonArea flex-evenly">
+          <button class="prev hoverMe">&lt;</button>
           <div class="circleArea">
             <div class="circle circleActive"></div>
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <button class="next">&gt;</button>
+          <button class="next hoverMe">&gt;</button>
         </div>
       </section>
     </main>
@@ -233,7 +245,7 @@
       <div class="copyrightBox">
         <p class="copyright">&copy; 2023 - Restore Blästring</p>
         <p class="opacity">By SPHINXLY, POWERED BY EASYWEB</p>
-        <div class="iconBox"><i class="fa-sharp fa-regular fa-shield"></i></div>
+        <div class="iconBox"><i class="fa-solid fa-shield"></i></div>
       </div>
     </footer>
   </body>
