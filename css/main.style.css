@@ -140,7 +140,7 @@ section {
 /* hero area */
 
 .hero {
-  background-image: url("/images/blastring.jpg");
+  background-image: url("./images/blastring.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -215,14 +215,14 @@ section {
 }
 
 .wetBlastringImg {
-  background-image: url(/wet.jpg);
+  background-image: url(./images/wet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
 }
 
 .floorBlasteringImg {
-  background-image: url(/floor.jpg);
+  background-image: url(./images/floor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
